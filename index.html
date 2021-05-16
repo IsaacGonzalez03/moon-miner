@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Newsreader:ital,wght@1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Racehorse!</title>
+</head>
+
+<body>
+
+  <div class="container-fluid bg-racetrack">
+
+    <div class="row d-flex justify-content-center p-2">
+      <h1>
+        Racehorse!
+      </h1>
+    </div>
+    <div class="row d-flex justify-content-center m-2">
+      <h5>
+        Ticonderoga
+      </h5>
+    </div>
+    <div class="row">
+      <div class="col m-2">
+        <div id="win-money">Won: $0</div>
+        <div id="money-mult">Multiplier: x1</div>
+        <div id="money-per-second">x3 seconds: $0</div>
+      </div>
+    </div>
+    <div class="row m-0 p-0">
+      <div class="col-12 text-center">
+        <img class="img-fluid" src="https://media.giphy.com/media/oAeR3xX77SysAlTplY/giphy.gif  " alt="horse"
+          onclick="clickMoney()">
+      </div>
+    </div>
+    <div class="row mb-5 justify-content-around">
+      <div class="col-md-2 col-12 m-1">
+        <button id="carrot-price" class="btn btn-danger btn-block" onclick="carrotUpgrade()">
+          $20 - Buy Carrots!
+        </button>
+      </div>
+      <div class="col-md-2 col-12 m-1">
+        <button id="whip-price" class="btn btn-danger btn-block" onclick="whipUpgrade()">
+          $100 - Buy Whip!
+        </button>
+      </div>
+      <div class="col-md-2 col-12 m-1">
+        <button id="stable-price" class="btn btn-danger btn-block" onclick="stableUpgrade()">
+          $250 - Stable Repairs!
+        </button>
+      </div>
+      <div class="col-md-2 col-12 m-1">
+        <button id="jockey-price" class="btn btn-danger btn-block" onclick="jockeyUpgrade()">
+          $500 - New Jockey!
+        </button>
+      </div>
+    </div>
+    <div class="row bg-danger p-5"></div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
