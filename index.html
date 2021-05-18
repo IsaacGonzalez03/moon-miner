@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Newsreader:ital,wght@1,600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7d6c9bb7a8.js" crossorigin="anonymous"></script>
   <title>Racehorse!</title>
 </head>
 
@@ -19,24 +20,35 @@
   <div class="container-fluid bg-racetrack">
 
     <div class="row d-flex justify-content-center p-2">
-      <h1>
-        Racehorse!
-      </h1>
+      <div class="col text-center">
+        <h1>
+          Racehorse!
+        </h1>
+      </div>
     </div>
     <div class="row d-flex justify-content-center m-2">
-      <h5>
-        Ticonderoga
-      </h5>
+      <div class="col text-center">
+        <h5>
+          Ticonderoga
+        </h5>
+      </div>
     </div>
     <div class="row">
-      <div class="col m-2">
+      <div class="col-md-5 col mx-2">
         <div id="win-money">Won: $0</div>
         <div id="money-mult">Multiplier: x1</div>
         <div id="money-per-second">x3 seconds: $0</div>
       </div>
+      <div class="col-md-5 col mx-2 d-flex flex-column align-items-start justify-content-around text-center">
+        <div id="carrot-count" class="fas fa-carrot">: 0</div>
+        <div id="whip-count" class="fas fa-hand-sparkles">: 0</div>
+        <div id="stable-count" class="fas fa-hammer">: 0</div>
+        <div id="jockey-count" class="fas fa-hat-cowboy-side">: 0</div>
+
+      </div>
     </div>
     <div class="row m-0 p-0">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center p-0 m-0">
         <img class="img-fluid" src="https://media.giphy.com/media/oAeR3xX77SysAlTplY/giphy.gif  " alt="horse"
           onclick="clickMoney()">
       </div>
