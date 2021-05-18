@@ -37,6 +37,7 @@ function whipUpgrade() {
   if (money >= whipPrice) {
     moneyPerClick += .5;
     money -= whipPrice;
+    whipCount += 1
     whipPrice = Math.round(whipPrice * 1.1)
     document.getElementById("whip-count").innerHTML = ": " + whipCount;
     document.getElementById("whip-price").innerHTML = "$" + whipPrice + " - Buy New Whip!";
@@ -51,6 +52,7 @@ function stableUpgrade() {
   if (money >= stablePrice) {
     money -= stablePrice;
     moneyPerSecond += 10;
+    stableCount += 1
     stablePrice = Math.round(stablePrice * 1.1)
     document.getElementById("stable-count").innerHTML = ": " + stableCount;
     document.getElementById("stable-price").innerHTML = "$" + stablePrice + " - Stable Repairs";
@@ -65,6 +67,7 @@ function jockeyUpgrade() {
   if (money >= jockeyPrice) {
     money -= jockeyPrice;
     moneyPerSecond += 20;
+    jockeyCount += 1
     jockeyPrice = Math.round(jockeyPrice * 1.1)
     document.getElementById("jockey-count").innerHTML = ": " + jockeyCount;
     document.getElementById("jockey-price").innerHTML = "$" + jockeyPrice + " - Befriend a Jockey";
